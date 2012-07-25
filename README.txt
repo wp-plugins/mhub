@@ -4,7 +4,7 @@ Contributors: shaun.trennery, MHub
 Tags: mobi, mobile, south africa, responsive, free, mobilizing
 Requires at least: 2.8.3
 Tested up to: 3.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,10 @@ The MHub WordPress plugin removes this hassle and automatically redirects your W
 No, links to your website on your mobi contain a special token which will prevent any additional mobile redirections
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Improved Analytics Tracking
 
 = 1.0 =
 * Initial Release
