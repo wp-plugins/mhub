@@ -65,14 +65,20 @@ if (!class_exists("MHubPlugin")) {
         }
 
         $dontRedirect = false;
-        if(!is_bool(strpos($_SERVER["REQUEST_URI"], "no_redirect=true"))) $dontRedirect = true;
+        if(!is_bool(strpos($_SERVER["REQUEST_URI"], "no_redirect=true"))) {
+          setcookie("mhub_no_redirect", true, time()+900);
+          $dontRedirect = true;
+        }
+
+        if(isset($_COOKIE["mhub_no_redirect"])) $dontRedirect = true;
+
         $targetUrl = "http://mhub.co.za/".get_option("mhub_wp_target_url");
 
         if(($targetUrl != "") && ($this->isValidURL($targetUrl)) && (!$dontRedirect)) {
           $uagent_obj = new uagent_info();
           $detect_mobile = $uagent_obj->DetectMobileLong();
 
-          if (($detect_mobile == 1)) {
+          if(($detect_mobile == 1)) {
             wp_redirect($targetUrl."?redirected=true");
             exit();
           }
