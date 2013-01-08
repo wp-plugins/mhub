@@ -3,7 +3,7 @@
 Plugin Name: MHub
 Plugin URI: http://mhub.co.za
 Description: MHub mobi site redirector for WordPress by MHub. Ignoring the potential of the mobile web is something today's business owner simply cannot afford.
-Version: 1.0.1
+Version: 1.0.2
 Date: 2012, July 16th
 Author: Shaun Trennery
 Author URI: http://twitter.com/shauntrennery
