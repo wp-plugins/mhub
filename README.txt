@@ -64,7 +64,7 @@ No, links to your website on your mobi contain a special token which will preven
 
 == Changelog ==
 
-= 1.0.2
+= 1.0.2 =
 * Improved no direct behaviour
 
 = 1.0.1 =
